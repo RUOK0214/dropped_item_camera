@@ -1,0 +1,9 @@
+{
+  "key.category.dropped_item_camera.main": "아이템 추적 카메라",
+  "key.dropped_item_camera.toggle": "바라보는 아이템 추적 / 해제",
+  "dropped_item_camera.started": "%s 추적 중 · %s 시점 변경 · %s 추적 해제",
+  "dropped_item_camera.stopped": "아이템 추적을 종료했습니다",
+  "dropped_item_camera.missing": "32블록 안에 떨어진 아이템을 조준하세요",
+  "modmenu.summaryTranslation.dropped_item_camera": "떨어진 아이템을 안정적인 카메라로 따라갑니다.",
+  "modmenu.descriptionTranslation.dropped_item_camera": "떨어진 아이템을 안정적인 카메라로 따라갑니다.\n\n32블록 안에 보이는 아이템을 조준하고 V를 누르세요. 후방 3인칭으로 추적을 시작하며, F5로 후방·전방·1인칭을 전환합니다. 마우스로 시선을 돌릴 수 있고, 아이템이 회전해도 카메라 방향은 독립적으로 유지됩니다.\n\nV를 다시 누르면 추적 전 시점으로 돌아옵니다. 아이템이 줍기·소멸·다른 아이템과의 합쳐짐 등으로 사라질 때도 추적을 끝냅니다. 설정 > 조작 > 키 지정 > 아이템 추적 카메라에서 단축키를 변경할 수 있습니다.\n\nMinecraft 26.2 / Fabric, Fabric API가 필요합니다. 클라이언트에 설치합니다. 클라이언트에 불러와진 아이템을 추적합니다."
+}

@@ -1,0 +1,53 @@
+plugins { id 'net.fabricmc.fabric-loom' version "${loom_version}" }
+
+version = project.mod_version
+group = project.maven_group
+base { archivesName = project.archives_base_name }
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.terraformersmc.com/' }
+    maven { url = 'https://maven.nucleoid.xyz/' }
+}
+loom {
+    splitEnvironmentSourceSets()
+    mods {
+        dropped_item_camera {
+            sourceSet sourceSets.main
+            sourceSet sourceSets.client
+        }
+    }
+}
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+}
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') { expand(version: project.version) }
+}
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 25
+}
+java { withSourcesJar() }
+jar {
+    from('LICENSE') { rename { "LICENSE_${project.archives_base_name}" } }
+}
+fabricApi {
+    configureTests {
+        createSourceSet = true
+        modId = 'dropped_item_camera_test'
+        enableGameTests = false
+        enableClientGameTests = true
+        eula = true
+    }
+}
+
+// Mod Menu is only loaded in the test client.
+dependencies {
+    gametestCompileOnly("com.terraformersmc:modmenu:${modmenu_version}") { transitive = false }
+    clientRuntimeOnly("com.terraformersmc:modmenu:${modmenu_version}") { transitive = false }
+    clientRuntimeOnly "eu.pb4:placeholder-api:3.1.0-beta.1+26.2"
+}

@@ -1,0 +1,9 @@
+{
+  "key.category.dropped_item_camera.main": "Dropped Item Camera",
+  "key.dropped_item_camera.toggle": "Follow targeted item / stop following",
+  "dropped_item_camera.started": "Following %s · %s to change view · %s to stop",
+  "dropped_item_camera.stopped": "Stopped following the item",
+  "dropped_item_camera.missing": "Aim at a dropped item within 32 blocks",
+  "modmenu.summaryTranslation.dropped_item_camera": "Follow a dropped item with a steady camera.",
+  "modmenu.descriptionTranslation.dropped_item_camera": "Follow a dropped item with a steady camera.\n\nAim at a visible dropped item within 32 blocks and press V. Following starts in rear third-person view. F5 cycles rear, front and first-person views. Move the mouse to look around. Camera angles stay independent of the item's spin.\n\nPress V again to return. Following ends when the item disappears, including pickup, despawn or merging into another stack. Your previous perspective is restored. Change the follow key in Options > Controls > Key Binds > Dropped Item Camera.\n\nMinecraft 26.2 / Fabric. Requires Fabric API. Install on the client. Tracking uses entities loaded by your client."
+}
