@@ -1,3 +1,5 @@
-Generated with the built-in ImageGen tool on 2026-11-07.
+Original icon design generated with the built-in ImageGen tool on 2026-11-07.
+Since 0.1.2, the packaged icon uses the user's supplied 64x64 PNG (3,649 bytes).
+The prompt below records the original design.
 
 Use case: logo-brand. Asset type: square Minecraft Fabric mod icon for Dropped Item Camera. Primary request: a polished pixel-art icon showing a small dropped cyan diamond being followed by a compact charcoal camera, enclosed by four clear viewfinder corner marks. Dark simple square backdrop, crisp large pixel shapes, strong silhouette and contrast, limited detail that remains readable at 32 pixels. Center composition, generous margin. No words, letters, numbers, watermark or other branding. Produce one square icon only.

@@ -19,7 +19,7 @@
 | Fabric API | 0.160.0+26.2 이상 |
 | Mod Menu | 선택 사항, 20.0.2에서 표시 확인 |
 
-릴리스의 **dropped-item-camera-0.1.1.jar**와 Fabric API를 게임의 `mods` 폴더에 넣습니다.
+릴리스의 **dropped-item-camera-0.1.2.jar**와 Fabric API를 게임의 `mods` 폴더에 넣습니다.
 업데이트할 때는 이전 Dropped Item Camera JAR를 제거하고 교체하세요.
 클라이언트에 설치하며, 멀티플레이에서도 클라이언트에 불러와진 아이템을 추적합니다.
 설치용 JAR, 안내 문서를 포함한 ZIP, 개발용 소스 JAR를 릴리스에서 제공합니다.
@@ -76,4 +76,5 @@ GitHub Actions는 빌드와 게임 테스트를 통과한 main 커밋의 새 버
 ## 라이선스
 
 Copyright (c) 2026 RUOK0214. [MIT License](LICENSE).
-아이콘도 같은 라이선스로 제공합니다. 내장 ImageGen으로 제작했으며 [생성 프롬프트](docs/icon-prompt.txt)를 보관합니다.
+아이콘도 같은 라이선스로 제공합니다. 0.1.2부터 사용자가 선택한 64×64 PNG(3,649바이트)를 사용합니다.
+원본 디자인은 내장 ImageGen으로 제작했으며 [원본 생성 프롬프트](docs/icon-prompt.txt)를 보관합니다.
